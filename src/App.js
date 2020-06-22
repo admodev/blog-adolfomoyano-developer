@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import About from "./components/About.js";
 import Portfolio from "./components/Portfolio.js";
 import Contacto from "./components/Contacto.js";
+import Darkmode from "./components/Darkmode.js";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           </Switch>
         </Router>
       </Navbar>
+      <Darkmode />
     </div>
   );
 }

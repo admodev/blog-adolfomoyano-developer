@@ -1,23 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
 import { render } from "@testing-library/react";
+import "../darkmode.min.css";
 
 export default class Darkmode extends Component {
   render() {
-    const switchBtn = document.querySelector(".switchBtn");
-    const container = document.querySelector(".container");
-    const threadEnd = document.querySelector(".threadEnd");
-
-    switchBtn.addEventListener("click", () => container.classList.toggle("on"));
-
-    threadEnd.addEventListener("click", () => {
-      if (switchBtn.checked) {
-        switchBtn.checked = false;
-        container.classList.toggle("on");
-      } else {
-        switchBtn.checked = true;
-        container.classList.toggle("on");
-      }
-    });
+    // Mañana añadir js acá...
     return (
       <div className="container">
         <input type="checkbox" className="switchBtn" />
